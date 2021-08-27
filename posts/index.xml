@@ -1,0 +1,100 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Stay Hungry</title>
+        <link>http://xidoo.top/posts/</link>
+        <description>All Posts | Stay Hungry</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 27 Aug 2021 15:27:39 &#43;0800</lastBuildDate><atom:link href="http://xidoo.top/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>SLUB &amp; Buddy System in Linux Kernel</title>
+    <link>http://xidoo.top/2021/08/slab_buddy_system0/</link>
+    <pubDate>Fri, 27 Aug 2021 15:27:39 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://xidoo.top/2021/08/slab_buddy_system0/</guid>
+    <description><![CDATA[<p>CTF games have flourished in recent years. However, more GLIBC heap allocator exploit techiniques are becoming boring and meaningless, especially for games in China. Challenges are well-designed, deliberately constructed, leading to specific ways to solve them, which is actually further and further away from real world exploits. I started to aim more at Linux kernel memory allocator these days and gathered some imformation about Buddy System &amp; SLUB hitherto.</p>]]></description>
+</item><item>
+    <title>Linux Kernel Mitigation &amp; Bypass</title>
+    <link>http://xidoo.top/2021/08/kernel_mitigation_bypass/</link>
+    <pubDate>Wed, 25 Aug 2021 10:30:50 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://xidoo.top/2021/08/kernel_mitigation_bypass/</guid>
+    <description><![CDATA[<p>Like user mode, there are also couples of ways of mitigation against exploits in Linux kernel. Here is a list of mitigation in kernel mode and methods to bypass some of them.</p>]]></description>
+</item><item>
+    <title>Init New World</title>
+    <link>http://xidoo.top/2021/08/first_post/</link>
+    <pubDate>Wed, 25 Aug 2021 10:27:50 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://xidoo.top/2021/08/first_post/</guid>
+    <description><![CDATA[<h1 id="font-colorredrefreshed-by-x1do0font"><font color=red>Refreshed by X1do0</font></h1>
+<p>prelude of <del>the new theme demo</del> babble</p>]]></description>
+</item><item>
+    <title>Hxp2020</title>
+    <link>http://xidoo.top/2021/08/hxp2020/</link>
+    <pubDate>Mon, 23 Aug 2021 21:44:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://xidoo.top/2021/08/hxp2020/</guid>
+    <description><![CDATA[<p>Congratulations to Kaztebin, ranked 1 in DEFCON CTF29 again.</p>
+<p>It reminds me of my first ctf competition with Katzebin: hxp2020 [1]. There are some excellent challenges in this game which I missed out at that time, including some linux kernel exploitations. Recently I started to learn kernel pwn, and I think it&rsquo;s time to solve these left challenges.</p>]]></description>
+</item><item>
+    <title>BSides Noida CTF 2021</title>
+    <link>http://xidoo.top/2021/08/bsides-noida-ctf-2021/</link>
+    <pubDate>Wed, 18 Aug 2021 16:19:15 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://xidoo.top/2021/08/bsides-noida-ctf-2021/</guid>
+    <description><![CDATA[<p>周末和学弟学妹一起打的一场比赛，比较基础，但涉及的知识面较广，有必要整理查漏补缺
+url: <a href="https://ctftime.org/event/1397" target="_blank" rel="noopener noreffer">https://ctftime.org/event/1397</a>  rank 8 with lilac</p>
+<ul>
+<li>babystack: static link, find gadget to trigger your own syscall and ROP</li>
+<li>warmup: glibc2.32 (lastest version) tcache exploitation, xor bypass</li>
+<li>khop: basic linux kernel exploits, use-after-free and zero deference</li>
+<li>babymusl: musl libc heap exploits, unlink vulnerability and ROP</li>
+<li>suscall: basic linux kernel exploits, bugged syscall implemented by host</li>
+<li>trash: glibc2.32 off-by-null, trigger heap overlapping and double free</li>
+<li>Interpreter: virtual machine exploits, out-of-bound read and write</li>
+</ul>]]></description>
+</item><item>
+    <title>Qwb final 2021</title>
+    <link>http://xidoo.top/2021/07/qwb2021/</link>
+    <pubDate>Thu, 15 Jul 2021 17:08:17 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://xidoo.top/2021/07/qwb2021/</guid>
+    <description><![CDATA[<p>国内最受瞩目的比赛之一，拥有几乎最高的PWN/realworld赛题质量。</p>
+<p>比赛时看了几道cold down, EXSI找到了洞但是不好复现&hellip;</p>
+<ul>
+<li>easy_go</li>
+<li>vmnote</li>
+<li>s2a</li>
+<li>强网先锋</li>
+<li>EXSI (Real World)</li>
+</ul>
+<p>rank 3 with AAA</p>]]></description>
+</item><item>
+    <title>CVE 2009 1759</title>
+    <link>http://xidoo.top/2021/07/cve-2009-1759/</link>
+    <pubDate>Mon, 12 Jul 2021 19:19:54 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://xidoo.top/2021/07/cve-2009-1759/</guid>
+    <description><![CDATA[<h2 id="overall">Overall</h2>
+<p>.torrent文件是BT种子文件格式，CTorrent是该文件格式的解析器。由于解析器解析过程中某个解析函数缺少长度检测，在解析由用户可控大小的Path时会将用户输入memcpy到栈上定长buffer，可造成栈溢出，ROP提权。</p>
+<p>复现契机来自于强网先锋[强网杯2021final]</p>]]></description>
+</item><item>
+    <title>Vue.js 初探</title>
+    <link>http://xidoo.top/2021/04/vue_js0/</link>
+    <pubDate>Tue, 20 Apr 2021 20:00:51 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://xidoo.top/2021/04/vue_js0/</guid>
+    <description><![CDATA[<p>最近写应用程序感觉 python,java 的 gui 太丑了，咨询了一波web爷爷。在一星期内从零开始入门了前后端分离的开发框架，并成功赶在实验截止日期前套用，治好了我的强迫症. 在这个过程中不成体系且稀碎地顺手记录了一下，权当纪念这段爆肝的日子。</p>]]></description>
+</item><item>
+    <title>Wh1t3zZ 封禁3周年祭</title>
+    <link>http://xidoo.top/2021/02/diary0/</link>
+    <pubDate>Fri, 12 Feb 2021 11:01:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://xidoo.top/2021/02/diary0/</guid>
+    <description><![CDATA[<p><strong>Some birds aren&rsquo;t meant to be caged，their feathers are just too bright.</strong></p>]]></description>
+</item><item>
+    <title>ARM PWN 调试环境搭建</title>
+    <link>http://xidoo.top/2021/01/armpwn/</link>
+    <pubDate>Sat, 23 Jan 2021 21:22:33 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>http://xidoo.top/2021/01/armpwn/</guid>
+    <description><![CDATA[<p>qemu是GNU/linux上十分常用的模拟处理器，可以在ubuntu下跑arm\mips甚至riscv等几乎所有架构的可执行文件，一台机器上可以虚拟化为多种架构的机器。</p>]]></description>
+</item></channel>
+</rss>
